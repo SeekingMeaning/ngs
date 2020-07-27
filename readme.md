@@ -145,7 +145,9 @@ This is how an instance can be created using NGS (real working code).
 * [build chunk of hosts file](bin/ec2hostsfile.ngs) for a management machine. Hosts named `env-role` or `env-role-N`, depending on whether you have one or more machines of specific role in the environment.
 * [Race condition and locks demo](bin/locks.ngs).
 
-## Running Using Docker
+## Running
+
+### Running Using Docker
 
 	# Build the docker
 	docker build -t ngs .
@@ -153,6 +155,10 @@ This is how an instance can be created using NGS (real working code).
 	docker run -it --rm ngs
 	# Use NGS inside the container
 	ngs -pi 'sum(0..10)'
+
+### Running Using Homebrew
+
+	brew install ngs
 
 ## Compiling and Running
 
